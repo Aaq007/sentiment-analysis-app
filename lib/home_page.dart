@@ -19,14 +19,13 @@ class _HomePageState extends State<HomePage> {
         children: const [
           TextField(
             textAlign: TextAlign.center,
+            maxLines: null,
+            minLines: 4,
             decoration: InputDecoration(
               hintText: 'Text here',
               alignLabelWithHint: true,
               labelText: 'Text',
             ),
-            // expands: true,
-            // minLines: null,
-            // maxLines: null,
           )
         ],
       ),
