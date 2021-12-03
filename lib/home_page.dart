@@ -17,19 +17,28 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: Column(
-        children: const [
-          TextField(
-            textAlign: TextAlign.center,
-            maxLines: null,
-            minLines: 4,
-            decoration: InputDecoration(
-              hintText: 'Enter text here',
-              alignLabelWithHint: true,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.all(Radius.circular(25.0)),
-              ),
-              // labelText: 'Text',
+        children: [
+          const Expanded(
+            child: TextField(
+              textAlign: TextAlign.center,
+              maxLines: null,
+              minLines: 20,
+              decoration: InputDecoration(
+                  hintText: 'Enter text here',
+                  alignLabelWithHint: true,
+                  enabledBorder: InputBorder.none,
+                  disabledBorder: InputBorder.none
+
+                  // border: UnderlineInputBorder(
+                  //   borderRadius: BorderRadius.zero,
+                  // ),
+                  // labelText: 'Text',
+                  ),
             ),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text('Analyze'),
           )
         ],
       ),
