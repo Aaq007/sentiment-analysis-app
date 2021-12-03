@@ -15,7 +15,21 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Sentiment Analysis'),
         centerTitle: true,
       ),
-      body: Column(),
+      body: Column(
+        children: const [
+          TextField(
+            textAlign: TextAlign.center,
+            decoration: InputDecoration(
+              hintText: 'Text here',
+              alignLabelWithHint: true,
+              labelText: 'Text',
+            ),
+            // expands: true,
+            // minLines: null,
+            // maxLines: null,
+          )
+        ],
+      ),
     );
   }
 }
