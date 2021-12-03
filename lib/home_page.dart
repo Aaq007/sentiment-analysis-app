@@ -22,9 +22,9 @@ class _HomePageState extends State<HomePage> {
             maxLines: null,
             minLines: 4,
             decoration: InputDecoration(
-              hintText: 'Text here',
+              hintText: 'Enter text here',
               alignLabelWithHint: true,
-              labelText: 'Text',
+              // labelText: 'Text',
             ),
           )
         ],
