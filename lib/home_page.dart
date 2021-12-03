@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -24,6 +25,9 @@ class _HomePageState extends State<HomePage> {
             decoration: InputDecoration(
               hintText: 'Enter text here',
               alignLabelWithHint: true,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.all(Radius.circular(25.0)),
+              ),
               // labelText: 'Text',
             ),
           )
