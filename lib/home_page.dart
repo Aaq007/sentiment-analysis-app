@@ -17,11 +17,12 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Expanded(
+          const Flexible(
             child: TextField(
               textAlign: TextAlign.center,
-              maxLines: null,
+              maxLines: 20,
               minLines: 20,
               decoration: InputDecoration(
                   hintText: 'Enter text here',
