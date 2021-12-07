@@ -27,15 +27,15 @@ class _HomePageState extends State<HomePage> {
               maxLines: 20,
               minLines: 20,
               decoration: const InputDecoration(
-                  hintText: 'Enter text here',
-                  alignLabelWithHint: true,
-                  enabledBorder: InputBorder.none,
-                  disabledBorder: InputBorder.none
-                  // border: UnderlineInputBorder(
-                  //   borderRadius: BorderRadius.zero,
-                  // ),
-                  // labelText: 'Text',
-                  ),
+                hintText: 'Enter text here',
+                alignLabelWithHint: true,
+                enabledBorder: InputBorder.none,
+                disabledBorder: InputBorder.none,
+                border: UnderlineInputBorder(
+                  borderRadius: BorderRadius.zero,
+                ),
+                labelText: 'Text',
+              ),
             ),
           ),
           ElevatedButton(
