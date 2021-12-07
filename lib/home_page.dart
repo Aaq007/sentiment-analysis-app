@@ -20,12 +20,13 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const Flexible(
+          Flexible(
             child: TextField(
               textAlign: TextAlign.center,
+              controller: _textFieldController,
               maxLines: 20,
               minLines: 20,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   hintText: 'Enter text here',
                   alignLabelWithHint: true,
                   enabledBorder: InputBorder.none,
